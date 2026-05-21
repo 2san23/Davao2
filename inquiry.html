@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquiry Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/1.png" class="logo me-2" alt="Davao del Sur seal">
+        Davao del Sur
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="festivals.html">Festivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="inquiry.html">Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="page-main">
+<section id="inquiry" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="form-panel text-start">
+              <div class="section-heading text-start mb-4">
+                <p class="section-kicker">Inquiry Form</p>
+                <h2>Plan Your Davao del Sur Trip</h2>
+              </div>
+              <form id="inquiryForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full name</label>
+                    <input type="text" id="fullName" class="form-control" required>
+                    <div class="invalid-feedback">Full name is required.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" required>
+                    <div class="invalid-feedback">Enter a valid email address.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contact" class="form-label">Contact number</label>
+                    <input type="text" id="contact" class="form-control" required>
+                    <div class="invalid-feedback">Contact number must contain numbers only.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="selectedDestination" class="form-label">Selected destination</label>
+                    <select id="selectedDestination" class="form-select" required>
+                      <option value="">Choose a destination</option>
+                      <option value="Mount Apo">Mount Apo</option>
+                      <option value="Philippine Eagle Center">Philippine Eagle Center</option>
+                      <option value="Malagos Garden Resort">Malagos Garden Resort</option>
+                      <option value="Davao Crocodile Park">Davao Crocodile Park</option>
+                      <option value="Dawis Beach">Dawis Beach</option>
+                      <option value="Talomo Beach">Talomo Beach</option>
+                      <option value="Samal Island">Samal Island</option>
+                      <option value="Japanese Tunnel">Japanese Tunnel</option>
+                      <option value="Roxas Avenue Night Market">Roxas Avenue Night Market</option>
+                      <option value="People's Park">People's Park</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a destination.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="travelDate" class="form-label">Travel date</label>
+                    <input type="date" id="travelDate" class="form-control" required>
+                    <div class="invalid-feedback">Travel date is required.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="visitors" class="form-label">Number of visitors</label>
+                    <input type="number" id="visitors" class="form-control" min="1" required>
+                    <div class="invalid-feedback">Number of visitors must be at least 1.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="5" required></textarea>
+                    <div class="invalid-feedback">Message is required.</div>
+                  </div>
+                  <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
+                    <button class="btn btn-tourism" type="submit">Submit Inquiry</button>
+                    <span id="formSuccess" class="success-message d-none">Your inquiry has been checked and is ready to send.</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center p-4 custom-footer text-white">
+    <p class="mb-0">Copyright 2026 Province of Davao del Sur Tourism</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
